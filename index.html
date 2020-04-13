@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+
+  <!--网页文档基本信息-->
+  <title>Hoshino Arisa Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--css样式引用部分-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!--补充用css设置-->
+  <style type="text/css">
+      .fa{
+        margin: 10px;
+      }
+      .profile-name{
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+  </style>
+
+</head>
+
+<body id="top">
+
+    <!--建立顶部导航栏 带有主页按钮-->
+    <div class="container">
+    <header class="profile-header py-3">
+    <div class="row flex-nowrap justify-content-start align-items-center">
+        <div class="col-md-4">
+        <a class="text-muted" href="index.html"><h5>Hoshino Arisa</h5></a>
+        </div>
+        <div class="col-md-4">
+        <p></p>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end align-items-center flex-shrink-1">
+        </div>
+    </div>
+    </header>
+    </div>
+
+    <!-- 建立响应式导航栏 -->
+    <a href="#nav" class="open toggle-btn"><i class="fa fa-circle faa-pulse animated" aria-hidden="true"></i></a>
+    <nav id="nav">
+        <ul class="nav-bar-profile d-flex justify-content-center align-items-center">
+            <li><a class="nav-link active" href="index.html" data-toggle="tooltip" title="简介" data-placement="bottom" data-trigger="hover"><i class="fa fa-tags" style="font-size:20px"></i></a></li>
+            <li><a class="nav-link" role="button" href="seiyuu.html" data-toggle="tooltip" title="声优" data-placement="bottom" data-trigger="hover"><i class="fa fa-heart" style="font-size:20px"></i></a></li>
+            <li><a class="nav-link" role="button" href="acg.html" data-toggle="tooltip" title="ACG" data-placement="bottom" data-trigger="hover"><i class="fa fa-star" style="font-size:20px"></i></a></li>
+            <li><a class="nav-link" role="button" href="others.html" data-toggle="tooltip" title="其他" data-placement="bottom" data-trigger="hover"><i class="fa fa-sticky-note" style="font-size:20px"></i></a></li>
+        </ul>
+        <a href="#top" class="close toggle-btn"><i class="fa fa-times-circle faa-pulse animated" aria-hidden="true"></i></a>
+    </nav>
+
+    <!--页面主体部分-->
+    <div class="container-fliud">
+        <div class="row clearfix">
+        
+            <!--间隔空白部分-->
+            <div class="col-md-2"></div>
+    
+            <!--内容主体部分 将设置多个同界面不同内容的页面-->
+            <div class="col-md-8 mt-3 mb-3">
+                <div class="d-flex">
+                    <div class="p-3 w-40 flex-shrink-1 ml-2 mr-2">
+                        <img src="image/profile.JPG" class="figure-img img-fluid rounded" alt="profile img">
+                    </div>
+                    
+                    <div class="p-3 w-100">
+                        <h5 class="profile-name mt-3 mb-3">琳酱/星野アリサ</h5>
+                        <p class="text-muted"><small>入宅十年少女 至今还是喜欢ACG这个世界
+                            <br />除了ACG以外也有其他爱好
+                            <br />话痨 自娱自乐选手 人还行只要你不嫌弃我 不过有点敏感 具有两面性
+                            <br />朝着my pace+佛系方向前进中 日常自勉 想要多去尝试
+                            <br />关于名字和称呼：因为早期微博的用户名就是写的琳酱，所以大家一般称呼我都是琳酱。
+                            而后面的名字是最近取的，常用于游戏名或者其他地方，名字是来源于我喜欢的星星+我喜欢的游戏闪之轨迹里的亚莉莎的名字。
+                            称呼的话随意就行，但一般是前者，不过如果有人称呼了我后面的名字的话，我会觉得惊喜😂</small>
+                        </p>    
+
+                        <div class="d-flex justify-content-start align-items-center">
+                            <a href="https://github.com/hoshinoa-0303">
+                                <i class="fa fa-github" style="font-size:30px;color:black"></i>
+                            </a>
+                            <a href="https://www.weibo.com/iris030529">
+                                <i class="fa fa-weibo" style="font-size:30px;color:black"></i>
+                            </a>
+                            <a href="https://twitter.com/irischan0529_">
+                                <i class="fa fa-twitter" style="font-size:30px;color:black"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--间隔空白部分-->
+            <div class="col-md-2"></div>
+    
+        </div>
+	</div>
+
+    <footer>
+        <p class="text-center">Hoshino Arisa @ All Rights Reserved 2020</p>
+    </footer>
+
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip(); // 也可以使用 $('#text').tooltip(); 来启用弹窗
+        });
+    </script>
+
+</body>
+</html>
